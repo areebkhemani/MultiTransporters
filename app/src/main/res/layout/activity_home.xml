@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="40dp"
+                    android:paddingLeft="5dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/payments_updated" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_toRightOf="@id/imageButton1"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/driver_updated" />
+
+                    <ImageButton
+                        android:id="@+id/img_Tyres"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_below="@id/imageButton1"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/tyres" />
+                    <ImageButton
+                        android:id="@+id/Petrol"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_below="@id/imageButton"
+                        android:onClick="OpenComingSoon"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@id/PayDues"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/petrol" />
+
+                   <ImageButton
+                        android:id="@+id/PayDues"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_below="@id/img_Tyres"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:onClick="OpenComingSoon"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/paydues" />
+                    <ImageButton
+                        android:id="@+id/spareParts"
+                        android:layout_width="200dp"
+                        android:layout_height="225dp"
+                        android:layout_below="@id/Petrol"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:onClick="OpenComingSoon"
+                        android:layout_toRightOf="@id/img_Tyres"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/spparts" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

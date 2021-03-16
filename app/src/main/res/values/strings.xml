@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Transportation</string>
+    <string-array name="companies">
+        <item>Dolmen</item>
+        <item>Abu Dawood</item>
+        <item>Nandos</item>
+        <item>ePlanet</item>
+        <item>Olive</item>
+        <item>SalSoft</item>
+        <item>Legend Desk</item>
+        <item>Kenwood</item>
+        <item>OAKS</item>
+
+    </string-array>
+</resources>
